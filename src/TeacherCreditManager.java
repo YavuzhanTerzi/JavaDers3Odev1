@@ -1,11 +1,8 @@
-public class TeacherCreditManager implements ICreditManager {
+public abstract class TeacherCreditManager implements  ICreditManager {
 
-    public void Calculate() {
+    @Override
+    public  void Calculate() {
         System.out.println("Öğretmen kredisi hesaplandı");
     }
 
-
-    public void save() {
-
-    }
 }

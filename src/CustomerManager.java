@@ -18,6 +18,8 @@ public class CustomerManager {
     }
 
     public void giveCredit(){
+        _creditManager.Calculate();
+        System.out.println("Kredi verildi");
 
     }
 

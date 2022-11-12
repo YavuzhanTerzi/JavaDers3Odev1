@@ -29,7 +29,12 @@ public class Main {
          */
 
         //IoC Container
-        CustomerManager customerManager= new CustomerManager(new Customer(), new TeacherCreditManager());
+        CustomerManager customerManager= new CustomerManager(new Customer(), new TeacherCreditManager() {
+            @Override
+            public void save() {
+
+            }
+        });
         customerManager.giveCredit();
 
 
